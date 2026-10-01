@@ -7,10 +7,10 @@ const OUTPUT_PATH = './stats.json';
 
 const gamedigServers = [
     { id: 'arma', type: 'arma3', host: process.env.IP_ARMA, port: parseInt(process.env.PORT_ARMA) },
-    // { id: 'mc_vanilla', type: 'minecraft', host: process.env.IP_MC_VANILLA, port: parseInt(process.env.PORT_MC_VANILLA) },
-    // { id: 'mc_mod1', type: 'minecraft', host: process.env.IP_MC_MOD1, port: parseInt(process.env.PORT_MC_MOD1) },
-    // { id: 'mc_mod2', type: 'minecraft', host: process.env.IP_MC_MOD2, port: parseInt(process.env.PORT_MC_MOD2) },
-    // { id: 'mc_hc', type: 'minecraft', host: process.env.IP_MC_HC, port: parseInt(process.env.PORT_MC_HC) },
+    { id: 'mc_vanilla', type: 'minecraft', host: process.env.IP_MC_VANILLA, port: parseInt(process.env.PORT_MC_VANILLA) },
+    { id: 'mc_mod1', type: 'minecraft', host: process.env.IP_MC_MOD1, port: parseInt(process.env.PORT_MC_MOD1) },
+    { id: 'mc_mod2', type: 'minecraft', host: process.env.IP_MC_MOD2, port: parseInt(process.env.PORT_MC_MOD2) },
+    { id: 'mc_hc', type: 'minecraft', host: process.env.IP_MC_HC, port: parseInt(process.env.PORT_MC_HC) },
     { id: 'valheim', type: 'valheim', host: process.env.IP_VALHEIM, port: parseInt(process.env.PORT_VALHEIM) },
     { id: 'teamspeak', type: 'teamspeak3', host: process.env.IP_TEAMSPEAK, port: parseInt(process.env.PORT_TEAMSPEAK) },
 
@@ -25,14 +25,14 @@ const gamedigServers = [
     },
 
     // Trackmania (mit XML-RPC Login)
-    // {
-    //     id: 'trackmania',
-    //     type: 'trackmaniaforever',
-    //     host: process.env.IP_TRACKMANIA,
-    //     port: parseInt(process.env.PORT_TRACKMANIA),
-    //     login: process.env.TM_LOGIN,
-    //     password: process.env.TM_PASS
-    // },
+    {
+        id: 'trackmania',
+        type: 'trackmaniaforever',
+        host: process.env.IP_TRACKMANIA,
+        port: parseInt(process.env.PORT_TRACKMANIA),
+        login: process.env.TM_LOGIN,
+        password: process.env.TM_PASS
+    },
 
     // Discord (ohne IP/Port, nur Guild ID)
     {
