@@ -6,13 +6,16 @@ require('dotenv').config();
 const OUTPUT_PATH = './stats.json';
 
 const gamedigServers = [
-    { id: 'arma', type: 'arma3', host: process.env.IP_ARMA, port: parseInt(process.env.PORT_ARMA) },
+    // Connections issues netcup rootserver -> gportal gameserver
+    // { id: 'arma', type: 'arma3', host: process.env.IP_ARMA, port: parseInt(process.env.PORT_ARMA) },
     { id: 'mc_vanilla', type: 'minecraft', host: process.env.IP_MC_VANILLA, port: parseInt(process.env.PORT_MC_VANILLA) },
     { id: 'mc_mod1', type: 'minecraft', host: process.env.IP_MC_MOD1, port: parseInt(process.env.PORT_MC_MOD1) },
     { id: 'mc_mod2', type: 'minecraft', host: process.env.IP_MC_MOD2, port: parseInt(process.env.PORT_MC_MOD2) },
     { id: 'mc_hc', type: 'minecraft', host: process.env.IP_MC_HC, port: parseInt(process.env.PORT_MC_HC) },
     { id: 'valheim', type: 'valheim', host: process.env.IP_VALHEIM, port: parseInt(process.env.PORT_VALHEIM) },
-    { id: 'teamspeak', type: 'teamspeak3', host: process.env.IP_TEAMSPEAK, port: parseInt(process.env.PORT_TEAMSPEAK) },
+    { id: 'ts_main', type: 'teamspeak3', host: process.env.IP_TS_MAIN, port: parseInt(process.env.PORT_TS_MAIN) },
+    // TS6 servers not yet to be supported
+    // { id: 'ts_backup', type: 'teamspeak3', host: process.env.IP_TS_BACKUP, port: parseInt(process.env.PORT_TS_BACKUP) },
 
     // Palworld (mit REST-API Credentials)
     {
